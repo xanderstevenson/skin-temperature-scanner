@@ -268,7 +268,7 @@ void ThermalCamera::render_temp_labels() const {
     SDL_Point origin = {0, 640 - 48};
     SDL_Color text_color = {255, 255, 255, 255};
     render_text(message, text_color, origin, 1, font32);
-    std::string label = "Skin temperature:";
+    std::string label = "Skin temperature: ";
     render_text(label, text_color, origin, 0, font32);
     origin = {0, 0};
     float mean_temp_far = 0.0f;
@@ -276,7 +276,7 @@ void ThermalCamera::render_temp_labels() const {
     if (mean_temp_lpf <= 31.0) {
         label = "Low";
     } else if (mean_temp_lpf > 31.0 && mean_temp_lpf <= 34.2) {
-        label = "Normal";
+        label = "Normal: " + std::to_string(mean_temp_far) + "\xB0" + " F";
     } else if (mean_temp_lpf > 34.2 && mean_temp_lpf <= 35.0) {
         label = "High";
     } else if (mean_temp_lpf > 35) {

@@ -1,0 +1,59 @@
+
+DevNet IoT Produces Portable IR Thermal-Scanner
+Leveraging the Cisco IR829 Router to Create a Portable Temperature Screener
+Alexander Stevenson
+
+Who
+----
+
+Hello there, I'm Alexander Stevenson, a Cisco Devnet Engineer and IoT Team member. 
+I'm based out of Austin, Texas, although our team is mostly divided between 
+San Jose and Austin, with some members (Florian and Geev),based in Europe and Asia, respectively.
+
+What
+----
+
+This project, with approval and guidance from managers Paul Zimmerman and Jock Reed, started as a 
+research mission to determine the feasability of deploying IR Thermal cameras on an Edge device and
+managing them remotely. First, we determined the market lacks hand-held Commercial Off the Shelf 
+(COTS) temperature scanners, except those which are a) battery-operated b) designed for industrial
+use (not for body temperature) 3) unable to connect either wired or wirelessly (save for a few models
+which have Bluetooth connectivity only)
+
+Our initial specificatons included:
+
+1) Portable. The entire sytstem (scanner, router, display and power source) should be able to be
+transported in a personal carrying case and operated wherever a power outlet and celular signal are present.
+
+2) Use a Raspberry Pi 4 and an incorporated IT Thermal Camera to collect temperature
+
+3) Extend the range of the thermal data collection by hosting software in the IR829's IOx VM, which
+will deploy and manage the Thermal Camera and collect dta from it.
+
+4) Create a basic case to house the Rapberry Pi, thermal camera, IR829 and associated peripherals.
+
+When
+----
+This project was started in response to the COVID-19 pandemic in the Spring of 2020.
+
+Why
+---
+It's economically prohibitive for most people and small businesses to screen people for the main
+measurable symptom of COVID-19, which is temperature. The current IR Temperature scanners on the market
+are neither network nor power connectable and are not calibrated to measure human body temperature.
+
+How
+---
+
+1. Purchase a Raspberry Pi. I purchased a raspberry Pi 4B from Labists, it inlcuded heat-sinks, a casex
+as well as extra wires. Raspian was already preloaded onto the SIM card included in the set.
+
+2. Set up the Pi with a monitor. keyboard and mouse. Harden your Raspberry Pi now.
+
+3. Purchase an MLX90640 IR Thermal Sensor. Adafruit is probably the most well-know distributor, but they
+were all sold out. I ended up ordering mien from E-Bay for around......
+
+4. Research and test various software, in different lanuages, to run the IR Thermal Cam and display
+accurate temperature readings on the monitor.
+
+

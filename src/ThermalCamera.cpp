@@ -279,14 +279,25 @@ void ThermalCamera::render_temp_labels() const {
     mean_temp_far = (mean_temp_lpf * 1.8) + 32;
 
     if (mean_temp_lpf <= 31.0) {
-        label = "Low";
+        label = "Low" + (std::to_string(mean_temp_far) + "\xB0" + " F");
+        label.resize(8);
+        label += "\xB0";
+        label += " F";
     } else if (mean_temp_lpf > 31.0 && mean_temp_lpf <= 34.2) {
         label = "Normal: " + (std::to_string(mean_temp_far) + "\xB0" + " F");
         label.resize(12);
+        label += "\xB0";
+        label += " F";
     } else if (mean_temp_lpf > 34.2 && mean_temp_lpf <= 35.0) {
-        label = "High";
+        label = "High" + (std::to_string(mean_temp_far) + "\xB0" + " F");
+        label.resize(9);
+        label += "\xB0";
+        label += " F";
     } else if (mean_temp_lpf > 35) {
-        label = "Very high";
+        label = "Very high" + (std::to_string(mean_temp_far) + "\xB0" + " F");
+        label.resize(15);
+        label += "\xB0";
+        label += " F";
     }
     render_text(label, text_color, origin, 3, font64);
 }

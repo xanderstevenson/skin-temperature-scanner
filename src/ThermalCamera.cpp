@@ -20,6 +20,8 @@ limitations under the License.
 #include "ThermalCamera.h"
 #include "constants.h"
 #include "colormap.h"
+#include <math.h>
+#include <string>
 
 ThermalCamera::ThermalCamera() {
     SDL_LogInfo(SDL_LOG_CATEGORY_APPLICATION, "=== ThermalCamera, Copyright 2020 Ava-X ===");
@@ -271,12 +273,16 @@ void ThermalCamera::render_temp_labels() const {
     std::string label = "Skin temperature: ";
     render_text(label, text_color, origin, 0, font32);
     origin = {0, 0};
-    float mean_temp_far = 0.0f;
-    mean_temp_far = (mean_temp_lpf * 9/5) + 32;
+    
+    float mean_temp_far = 0;
+    mean_temp_far *= 1.00;
+    mean_temp_far = (mean_temp_lpf * 1.8) + 32;
+
     if (mean_temp_lpf <= 31.0) {
         label = "Low";
     } else if (mean_temp_lpf > 31.0 && mean_temp_lpf <= 34.2) {
-        label = "Normal: " + std::to_string(mean_temp_far) + "\xB0" + " F";
+        label = "Normal: " + (std::to_string(mean_temp_far) + "\xB0" + " F");
+        label.resize(12);
     } else if (mean_temp_lpf > 34.2 && mean_temp_lpf <= 35.0) {
         label = "High";
     } else if (mean_temp_lpf > 35) {

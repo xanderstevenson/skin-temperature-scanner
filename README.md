@@ -2,10 +2,7 @@
 
 ## Abstract
 
-This project aims to estimate the human body temperature with a
-thermal camera connected to a Raspberry Pi computer. Packaged with
-a battery and small screen, you can create a portable, handheld
-device to have a quick measure if someone has fever or not.
+It's economically prohibitive for most people and small businesses to screen people for the main measurable symptom of COVID-19, which is temperature. The current IR Temperature scanners on the market are neither network nor power connectable and are not calibrated to measure human body temperature. I developed this project as a way to use commercially available materials and Cisco's IoT platform to develop a solution. You can review my entire project at this repo. 
 
 |animation   | device  |
 |---|---|
@@ -14,9 +11,10 @@ device to have a quick measure if someone has fever or not.
 ## Part list
 
 For this prototype, the following hardware has been used:
-- Raspberry Pi 2, 3 or 4
-- MLX90640 Thermal Sensor, 32x24 px 
-- Waveshare 4.3inch HDMI LCD (B), 800x480, IPS
+- Raspberry Pi 2, 3 or 4 (I'm using 4B)
+- MLX90640 IR Thermal Camera, with a 24x32 array of IR thermal sensors, Wide ANgle (100 degrees)
+- Any decent monitor with HDMI cable to the Pi
+- Wired mouse and keyboard
 - 5V 2.4A power adapter (2x)
 - microSD card 8Gb or larger
 

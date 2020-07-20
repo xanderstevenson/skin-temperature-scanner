@@ -4,15 +4,15 @@
 
 It's economically prohibitive for most people and small businesses to screen people for the main measurable symptom of COVID-19, which is temperature. The current IR Temperature scanners on the market are neither network nor power connectable and are not calibrated to measure human body temperature. I developed this project as a way to use commercially available materials and Cisco's IoT platform to develop a solution. You can review my entire project at this repo. 
 
-|animation   | device  |
+|Animation   | Device  |
 |---|---|
-|<img alt="preview" src="resources/doc/preview.gif" height=400 width=240> | <img alt="box" src="resources/images/IRthermalCam.png" height=400 width=533>|
+|<img alt="preview" src="resources/images/IRthermalCamVid.gif" height=400 width=640> | <img alt="box" src="resources/images/IRthermalCam.png" height=400 width=400>|
 
 ## Part list
 
 For this prototype, the following hardware has been used:
 - Raspberry Pi 2, 3 or 4 (I'm using 4B)
-- MLX90640 IR Thermal Camera, with a 24x32 array of IR thermal sensors, Wide ANgle (100 degrees)
+- MLX90640 IR Thermal Camera, with a 24x32 array of IR thermal sensors, Wide Angle (100 degrees)
 - Any decent monitor with HDMI cable to the Pi
 - Wired mouse and keyboard
 - 5V 2.4A power adapter (2x)

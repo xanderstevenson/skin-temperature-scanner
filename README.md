@@ -6,7 +6,7 @@ It's economically prohibitive for most people and small businesses to screen peo
 
 |animation   | device  |
 |---|---|
-|<img alt="preview" src="resources/doc/preview.gif" height=400 width=240> | <img alt="box" src="resources/doc/01.jpg" height=400 width=533>|
+|<img alt="preview" src="resources/doc/preview.gif" height=400 width=240> | <img alt="box" src="resources/images/IRthermalCam.png" height=400 width=533>|
 
 ## Part list
 

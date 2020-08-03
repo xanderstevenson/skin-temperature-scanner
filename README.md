@@ -8,6 +8,8 @@ Our hope is that people will be motivated to deploy this project on a Cisco Edge
 
 alexstev@cisco.com
 
+The code for this project is also hosted at Cisco DevNet Code Exchange: https://developer.cisco.com/codeexchange/github/repo/xanderstevenson/skin-temperature-scanner 
+
 |Animation   | Device  |
 |---|---|
 |<img alt="preview" src="resources/images/IRthermalCamVid.gif" height=400 width=640> | <img alt="box" src="resources/images/IRthermalCam.png" height=400 width=400>|

@@ -1,5 +1,7 @@
 # Skin Temperature Scanner
 
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/xanderstevenson/skin-temperature-scanner)
+
 ## Abstract
 
 It's economically prohibitive for most people and small businesses to screen people for the main measurable symptom of COVID-19, which is temperature. The current IR Temperature scanners on the market are neither network nor power connectable and are not calibrated to measure human body temperature. I developed this project as a way to use commercially available materials and Cisco's IoT platform to develop a solution. You can review my entire project at this repo. 

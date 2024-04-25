@@ -4,7 +4,7 @@
 
 ## Abstract
 
-It's economically prohibitive for most people and small businesses to screen people for the main measurable symptom of COVID-19, which is temperature. The current IR Temperature scanners on the market are neither network nor power connectable and are not calibrated to measure human body temperature. I developed this project as a way to use commercially available materials and Cisco's IoT platform to develop a solution. You can review my entire project at this repo. 
+It's economically prohibitive for most people and small businesses to screen people for one of the main measurable symptoms of physical illness: temperature. The current IR Temperature scanners on the market are neither network nor hardwire-power-connectable and are not calibrated to measure human body temperature. I developed this project as a way to use commercially available materials and Cisco's IoT platform to develop a solution. You can review my entire project at this repo. 
 
 Our hope is that people will be motivated to deploy this project on a Cisco Edge Device, such as the IR829 Router, and then update and contribute to this repository, or fork their own version and share theor results with us. 
 
